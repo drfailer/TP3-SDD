@@ -9,11 +9,12 @@
 #define __DATA__
 
 
-#define NULLE_DATA ((data_t) {.valeur = 0})
+#define NULLE_DATA ((data_t) {.valeur = NULL})
+
+#include "../abr.h"
 
 typedef struct{
-  int valeur;
-  
+  node_t * valeur;
 }data_t;
 
 #endif

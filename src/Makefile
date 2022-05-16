@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -g
 LDFLAGS = 
 
-prog: main.c
+prog: main.c abr.c
 	$(CC) $(CFLAGS) -o $@ $^
 
 clean:

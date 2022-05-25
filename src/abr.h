@@ -4,9 +4,9 @@
 /* STRUCTURES: */
 
 typedef struct node {
-  int valeur;
-  struct node * fd;
-  struct node * fg;
+  int value;
+  struct node * ls;
+  struct node * rs;
 } node_t;
 
 
@@ -15,5 +15,9 @@ typedef struct node {
 node_t * createNode(int);
 node_t * addValue(node_t*, int);
 void freeAbr(node_t ** brt);
+node_t * deleteNode(node_t * brt, int v);
+node_t * abrFromFile(char * fileName);
+void display(node_t * r);
+int height(node_t * r);
 
 #endif

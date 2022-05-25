@@ -15,6 +15,7 @@
 
 typedef struct{
   node_t * valeur;
+  int i;
 }data_t;
 
 #endif
